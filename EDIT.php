@@ -5,7 +5,7 @@ $id = $_GET['id'];
 if (isset($_POST['update'])) {
     $sql = "UPDATE users SET name=?, email=?, phone=?, age=?, city=? WHERE id=?";
     $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "ssssii",
+    mysqli_stmt_bind_param($stmt, "sssssi",
         $_POST['name'],
         $_POST['email'],
         $_POST['phone'],
@@ -14,7 +14,7 @@ if (isset($_POST['update'])) {
         $id
     );
     mysqli_stmt_execute($stmt);
-    header("Location: VIEW.php");
+    header("Location: VIEW.php?action=success&msg=Record+Updated");
     exit;
 }
 

@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     mysqli_stmt_bind_param($stmt, "i", $id);
     mysqli_stmt_execute($stmt);
 
-    header("Location: VIEW.php");
+    header("Location: VIEW.php?action=danger&msg=Record+Deleted");
     exit();
 } else {
     echo "No ID specified for deletion.";
