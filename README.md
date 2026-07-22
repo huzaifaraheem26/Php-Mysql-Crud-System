@@ -4,7 +4,7 @@ A simple CRUD (Create, Read, Update, Delete) web application built with PHP and 
 ## Features
 - View all users
 - Add new user
-- Edit existing user
+- Edit existing user of the ifd
 - Delete user
 - Auto ID resequencing after delete
 - City field support
