@@ -3,7 +3,7 @@ A simple CRUD (Create, Read, Update, Delete) web application built with PHP and 
 
 ## Features
 - View all users
-- Add new user to id of the user
+- Add new user
 - Edit existing user
 - Delete user
 - Auto ID resequencing after delete
